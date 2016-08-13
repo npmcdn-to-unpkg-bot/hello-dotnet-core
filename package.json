@@ -1,0 +1,37 @@
+{
+  "name": "hello-aspnet-semantic",
+  "version": "0.1.0",
+  "description": "Testing out using react on a dotnet core web app with authenticated users",
+  "main": "Program.cs",
+  "scripts": {
+    "test": "dotnet test",
+    "start": "dotnet run",
+    "postinstall": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffhollan/hello-aspnet-semantic.git"
+  },
+  "keywords": [
+    "sandbox",
+    "helloworld"
+  ],
+  "author": "Jeff Hollan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffhollan/hello-aspnet-semantic/issues"
+  },
+  "homepage": "https://github.com/jeffhollan/hello-aspnet-semantic#readme",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2",
+    "uglify-js": "^2.7.0",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2"
+  }
+}
