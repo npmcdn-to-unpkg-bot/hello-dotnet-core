@@ -8,6 +8,8 @@ WORKDIR /app
 
 RUN ["dotnet", "restore"]
 
+RUN ["npm", "install"]
+
 RUN ["dotnet", "build"]
 
 RUN ["dotnet", "ef", "database", "update"]
