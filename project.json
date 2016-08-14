@@ -57,6 +57,10 @@
       "imports": [
         "portable-net45+win8"
       ]
+    },
+    "Microsoft.DotNet.Watcher.Tools": {
+      "version": "1.0.0-*",
+      "imports": "portable-net451+win8"
     }
   },
 
@@ -86,15 +90,17 @@
       "Views",
       "Areas/**/Views",
       "appsettings.json",
-      "web.config"
+      "web.config",
+      "Assets"
     ]
   },
 
   "scripts": {
-    "precompile": [ "dotnet bundle" ],
+    "precompile": [ "dotnet bundle", "webpack" ],
     "prepublish": [ "bower install" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   },
+
 
   "tooling": {
     "defaultNamespace": "hello_aspnet_semantic"

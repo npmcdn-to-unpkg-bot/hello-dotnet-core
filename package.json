@@ -6,7 +6,7 @@
   "scripts": {
     "test": "dotnet test",
     "start": "dotnet run",
-    "postinstall": "tsc"
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jeffhollan/hello-aspnet-semantic#readme",
   "dependencies": {
+    "gulp": "^3.9.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "typescript": "^1.8.10",
