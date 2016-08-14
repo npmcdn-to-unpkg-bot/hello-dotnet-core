@@ -17,7 +17,7 @@ var verbose = util.env.verbose;
 
 gulp.task('watch', ['serve'], function () {
     browserSync.init({});
-    semantic_watch();
+  //  semantic_watch();
     gulp.watch(["**/*.cshtml", "**/*.dll"]).on('change', reload);
     gulp.watch(["**/*.tsx"], ['rebuild']);
     gulp.watch(["wwwroot/semantic/**/*.css", "wwwroot/semantic/**/*.js"]).on('change', reload);
