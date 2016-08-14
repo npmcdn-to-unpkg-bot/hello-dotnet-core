@@ -5,8 +5,8 @@
     webpack = require("webpack"),
     webpackConfig = require("./webpack.config"),
     util = require("gulp-util"),
-    spawn = require("child_process").spawn,
-    dotnet = spawn('dotnet', ['watch', 'run']),
+    spawn = require("child_process").spawn
+    // dotnet = spawn('dotnet', ['watch', 'run']),
     semantic_watch = require("./Assets/Semantic/tasks/watch"),
     semantic_build = require("./Assets/Semantic/tasks/build")
 ;
@@ -35,7 +35,7 @@ gulp.task('rebuild', function () {
 });
 
 gulp.task('serve', function () {
-    dotnetRun();
+   dotnetRun();
 });
 
 gulp.task('build', 'Builds all files from source', semantic_build);
@@ -43,6 +43,7 @@ gulp.task('build', 'Builds all files from source', semantic_build);
 gulp.task('default', false, ['watch']);
 
 function dotnetRun() {
+    let dotnet = spawn('dotnet', ['watch', 'run'])
     dotnet.stdout.on('data', (data) => {
         if (verbose)
             console.log(data.toString('utf8'));
