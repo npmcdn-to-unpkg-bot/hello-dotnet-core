@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/jeffhollan/hello-aspnet-semantic#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "typescript": "^1.8.10",
@@ -32,6 +31,11 @@
     "webpack": "^1.13.1"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "semantic-ui": "^2.2.2",
+    "browser-sync": "^2.14.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.9",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2"
   }
